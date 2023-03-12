@@ -3,4 +3,8 @@
 # Дане завдання виконуємо в командах по 2-3 (бажано по 2) з повним циклом
 # використання GIT-a. Детальний опис ДЗ був в кінці уроку, за потреби перегляньте
 # пояснення ще раз, запис є
-
+import datetime
+def calculate_age_of_book(self, data):
+    convert_time = datetime.datetime.time(self.a)
+    res = datetime.datetime.now() - convert_time
+    return res
