@@ -4,3 +4,17 @@
 # використання GIT-a. Детальний опис ДЗ був в кінці уроку, за потреби перегляньте
 # пояснення ще раз, запис є
 
+class Book:
+
+    def __init__(self, name, author, year_of_publication):
+        self.name = name
+        self.author = author
+        self.year_of_publication = year_of_publication
+
+    def get_info(self):
+        print(f'name = {self.name}\n'
+              f'author = {self.author}\n'
+              f'year_of_publication = {self.year_of_publication}')
+
+
+
