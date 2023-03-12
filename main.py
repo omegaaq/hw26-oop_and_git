@@ -4,7 +4,7 @@
 # використання GIT-a. Детальний опис ДЗ був в кінці уроку, за потреби перегляньте
 # пояснення ще раз, запис є
 
-import datetime
+from datetime import datetime
 
 class Book:
 
@@ -18,10 +18,15 @@ class Book:
               f'author = {self.author}\n'
               f'year_of_publication = {self.year_of_publication}')
 
-
     def calculate_age_of_book(self, data):
-        convert_time = datetime.datetime.time(self.year_of_publication)
-        res = datetime.datetime.now() - convert_time
+        lst = list([int(value) for value in (book1.year_of_publication).split('-')])
+
+        year_now = datetime.now().year
+        year_published = lst[0]
+        res = year_now - year_published
         return res
 
 
+book1 = Book('first', 'Vlad Vladov', '1999-08-01')
+book1.get_info()
+print(f'book is : {book1.calculate_age_of_book(datetime.now())} years old')
